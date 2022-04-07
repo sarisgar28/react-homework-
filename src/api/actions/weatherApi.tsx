@@ -3,7 +3,7 @@ import { WeatherAction, WeatherData, WeatherError, GET_WEATHER, SET_LOADING, SET
 import { ThunkAction } from "redux-thunk";
 import { RootState } from "../reducers/combineReducer";
 
-export const REACT_API_KEY ="d42cf142cbe58a17761150c8c647bfee"
+export const REACT_API_KEY ="your API KEY goes here." 
 export const getWeatherByCity = (city: any): ThunkAction<void, RootState, null, WeatherAction> => {
   return async dispatch => {
     try {

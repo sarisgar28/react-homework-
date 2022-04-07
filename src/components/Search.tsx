@@ -10,7 +10,7 @@ interface SearchProps{
   city: string;
 }
 const Search: FC<SearchProps> = ({ city}) =>{
- const dispatch = useDispatch();
+ const dispatch = useDispatch<any>();
 
   const [name, setName] =useState('');
 

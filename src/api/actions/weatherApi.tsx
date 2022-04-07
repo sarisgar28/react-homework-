@@ -4,7 +4,7 @@ import { ThunkAction } from "redux-thunk";
 import { RootState } from "../reducers/combineReducer";
 
 export const REACT_API_KEY ="d42cf142cbe58a17761150c8c647bfee"
-export const getWeatherByCity = (city: string): ThunkAction<void, RootState, null, WeatherAction> => {
+export const getWeatherByCity = (city: any): ThunkAction<void, RootState, null, WeatherAction> => {
   return async dispatch => {
     try {
       const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${ REACT_API_KEY}`);
@@ -17,7 +17,7 @@ export const getWeatherByCity = (city: string): ThunkAction<void, RootState, nul
       dispatch({
         type: GET_WEATHER,
         payload: resData
-      });
+       });
     }catch(err: any) {
       dispatch({
         type: SET_ERROR,

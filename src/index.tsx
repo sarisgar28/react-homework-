@@ -4,7 +4,7 @@ import HomePage from "./components/HomePage";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from 'react-redux';
 import store from "./api/reducers/combineReducer";
-
+import './style.css'
 
 ReactDOM.render(
   <React.StrictMode>

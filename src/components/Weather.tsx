@@ -1,23 +1,10 @@
-import { FC } from "react";
-
-interface WeatherProps {
-  data: string;
-}
-
-const Weather: FC<WeatherProps> = ({ data }) => {
-  
- 
 
 
+export default function Weather() {
   return (
     <div >
-    
-    {data}
-           
-        
+   
   
     </div>
   );
-}
-
-export default Weather
+  }

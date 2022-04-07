@@ -52,7 +52,7 @@ export default function HomePage() {
     <>
       <Search city={''} />
   
-      <Weather data={''}   />
+      <Weather   />
     </>
   );
 }

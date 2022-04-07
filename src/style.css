@@ -1,0 +1,13 @@
+.search-container{
+  padding: 5%;
+  margin: 2%;
+  background-color: #b3b3b9;
+  opacity: unset;
+  display: grid;
+  place-items: center;
+  border-radius: 1%;
+}
+#Search{
+font-size: 55px;
+
+}

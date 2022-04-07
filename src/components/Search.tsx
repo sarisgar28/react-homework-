@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
-import React, { FC, useState } from'react';
+import { FC, useState } from'react';
+
 
 import {useDispatch } from 'react-redux'
 import {setAlert} from '../api/actions/alertActions'
@@ -19,7 +20,6 @@ const Search: FC<SearchProps> = ({ city}) =>{
 
   const handleSubmit = (e: any) =>{
     e.preventDefault();
-  
     if (name.trim() === ''){
       return dispatch(setAlert('City is Required'));
     }
@@ -33,21 +33,21 @@ const Search: FC<SearchProps> = ({ city}) =>{
 
  
   return(
-       <div>
+
+       <div className="search-container">
       <h1>Weather</h1>
       <p>Enter your City below to see your weather.</p>
-      <h1>{city}</h1>     
-      <form onSubmit={handleSubmit}>
+      <form>
       <input
         placeholder="City"
         value={name}
         onChange={handleChangeCity}
       />
-      <Button>
+      <Button onClick={handleSubmit}>
         Submit
       </Button>
     </form>
-  <h1>{name}</h1>
+      <h1>{name}</h1>
       </div>
   );
 }

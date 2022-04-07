@@ -4,8 +4,8 @@ Homework exercise to showcase front end skills.
 
 ![screenshot](./public/weather-screenshot.png)
 
-## The Goal
-
+<!-- ## The Goal -->
+<!-- 
 We already have a basic structure in place: JSX, CSS, and an api client to get current weather data. Now bring it to life using React! Create a weather app that does the following:
 
 - Displays the current weather for a given zip code using the **OpenWeatherMap** API [https://openweathermap.org/current](https://openweathermap.org/current)
@@ -20,7 +20,7 @@ Note that the existing code is an aid, but don't let it constrain you. Feel free
 
 Note that there is some rate limiting and account monitoring, so if you accidentally call the API excessively (for example, in a loop) you may get blocked / banned and require a new account. Reach out if this happens, and we'll unblock you.
 
-Example API Response Body:
+Example API Response Body: -->
 
 ```
 {
